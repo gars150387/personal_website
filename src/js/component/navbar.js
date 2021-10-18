@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-expand-lg navbar-light bg-secondary">
+		<nav className="navbar navbar-expand-lg navbar-light bg-secondary jsutify-content-between">
 			<button
 				className="navbar-toggler"
 				type="button"
@@ -15,24 +15,21 @@ export const Navbar = () => {
 				<span className="navbar-toggler-icon" />
 			</button>
 			<div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-				<a className="navbar-brand" href="#">
-					Gustavo Rodriguez
-				</a>
+				<Link to="/">
+					<p>
+						Gustavo Rodriguez <span className="sr-only">(current)</span>
+					</p>
+				</Link>
 				<ul className="navbar-nav mr-auto mt-2 mt-lg-0">
 					<li className="nav-item active">
-						<a className="nav-link" href="#">
-							Home <span className="sr-only">(current)</span>
-						</a>
+						<Link to="/certifications">
+							<p>Certifications</p>
+						</Link>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#">
-							Certifications
-						</a>
-					</li>
-					<li className="nav-item">
-						<a className="nav-link" href="#" tabIndex="-1" aria-disabled="true">
-							Projects
-						</a>
+						<Link to="/projects">
+							<p>Projects</p>
+						</Link>
 					</li>
 				</ul>
 				{/* <form className="form-inline my-2 my-lg-0">
