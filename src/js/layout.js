@@ -6,7 +6,7 @@ import { Certifications } from "./views/Certifications";
 import { Projects } from "./views/Projects";
 import injectContext from "./store/appContext";
 
-import { Navbar } from "./component/navbarComp";
+import { NavbarComp } from "./component/navbarComp";
 import { Footer } from "./component/footer";
 
 //create your first component
@@ -18,7 +18,7 @@ const Layout = () => {
 	return (
 		<div>
 			<BrowserRouter basename={basename}>
-				<Navbar />
+				<NavbarComp />
 				<Switch>
 					<Route exact path="/">
 						<Home />
