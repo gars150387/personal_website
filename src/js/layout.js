@@ -6,7 +6,7 @@ import { Certifications } from "./views/Certifications";
 import { Projects } from "./views/Projects";
 import injectContext from "./store/appContext";
 
-import { Navbar } from "./component/navbar";
+import { Navbar } from "./component/navbarComp";
 import { Footer } from "./component/footer";
 
 //create your first component
