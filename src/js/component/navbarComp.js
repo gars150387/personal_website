@@ -13,18 +13,26 @@ export const NavbarComp = () => {
 					<Nav className="me-auto">
 						<Nav.Link href="#features">About Me</Nav.Link>
 						<Nav.Link href="#pricing">Projects</Nav.Link>
-						<NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-							<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+						<NavDropdown title="GitHub" id="collasible-nav-dropdown">
+							<NavDropdown.Item href="https://github.com/gars150387/Contact_list_Flux_API_BasedOnArticle">
+								Contact List
+							</NavDropdown.Item>
+							<NavDropdown.Item href="https://github.com/gars150387/todo-list-in-landing-page-react-flux">
+								To-Do List
+							</NavDropdown.Item>
+							<NavDropdown.Item href="https://github.com/gars150387/simple-counter-exercise-react-hook">
+								Simple Counter Exercise
+							</NavDropdown.Item>
 							<NavDropdown.Divider />
-							<NavDropdown.Item href="#action/3.4">Certifications</NavDropdown.Item>
+							<NavDropdown.Item href="https://github.com/gars150387/random-excuse-exercise-javascript">
+								Random Excuse Exercise
+							</NavDropdown.Item>
 						</NavDropdown>
 					</Nav>
 					<Nav>
-						<Nav.Link href="#deets">More deets</Nav.Link>
+						<Nav.Link href="#deets">Certifications</Nav.Link>
 						<Nav.Link eventKey={2} href="#memes">
-							Dank memes
+							Contact
 						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
