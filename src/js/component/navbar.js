@@ -16,7 +16,7 @@ export const Navbar = () => {
 					aria-label="Toggle navigation">
 					<span className="navbar-toggler-icon" />
 				</button>
-				<div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<div className="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo02">
 					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 						<Link to="/">
 							<li className="nav-item">
