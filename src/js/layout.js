@@ -5,6 +5,8 @@ import { Home } from "./views/home";
 import { Certifications } from "./views/Certifications";
 import { Projects } from "./views/Projects";
 import injectContext from "./store/appContext";
+import { AboutMe } from "./views/AboutMe";
+import { Contact } from "./views/Contact";
 
 import { NavbarComp } from "./component/navbarComp";
 import { Footer } from "./component/footer";
@@ -28,6 +30,12 @@ const Layout = () => {
 					</Route>
 					<Route exact path="/certifications">
 						<Certifications />
+					</Route>
+					<Route exact path="/aboutMe">
+						<AboutMe />
+					</Route>
+					<Route exact path="/contact">
+						<Contact />
 					</Route>
 					<Route>
 						<h1>Not found!</h1>

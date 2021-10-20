@@ -7,12 +7,18 @@ export const NavbarComp = () => {
 	return (
 		<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
 			<Container>
-				<Navbar.Brand href="#home">Gustavo Rodriguez</Navbar.Brand>
+				<Navbar.Brand href="#home">
+					<Link to="/">Gustavo Rodriguez</Link>
+				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="me-auto">
-						<Nav.Link href="#features">About Me</Nav.Link>
-						<Nav.Link href="#pricing">Projects</Nav.Link>
+						<Link to="/aboutMe">
+							<Nav.Link href="#aboutMe">About Me</Nav.Link>
+						</Link>
+						<Link to="/projects">
+							<Nav.Link href="#projets">Projects</Nav.Link>
+						</Link>
 						<NavDropdown title="GitHub" id="collasible-nav-dropdown">
 							<NavDropdown.Item href="https://github.com/gars150387/Contact_list_Flux_API_BasedOnArticle">
 								Contact List
@@ -30,10 +36,12 @@ export const NavbarComp = () => {
 						</NavDropdown>
 					</Nav>
 					<Nav>
-						<Nav.Link href="#deets">Certifications</Nav.Link>
-						<Nav.Link eventKey={2} href="#memes">
-							Contact
-						</Nav.Link>
+						<Link to="/certifications">
+							<Nav.Link href="#certifications">Certifications</Nav.Link>
+						</Link>
+						<Link to="/contact">
+							<Nav.Link href="#contact">Contact</Nav.Link>
+						</Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
