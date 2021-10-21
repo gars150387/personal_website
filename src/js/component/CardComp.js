@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 
-export const CardComp = ({ title, description, img }) => {
+export const CardComp = ({ title, description, img, website }) => {
 	return (
 		<>
 			<Card style={{ width: "18rem" }}>
@@ -9,7 +9,9 @@ export const CardComp = ({ title, description, img }) => {
 				<Card.Body>
 					<Card.Title>{title}</Card.Title>
 					<Card.Text>{description}</Card.Text>
-					<Button variant="primary">Go somewhere</Button>
+					<Button variant="primary" href={website}>
+						Go somewhere
+					</Button>
 				</Card.Body>
 			</Card>
 		</>
