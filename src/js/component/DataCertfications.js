@@ -7,8 +7,8 @@ export const DataCertifications =[{
 },
 {
     id:002,
-    nameCertification: "Build a Google Map App With Javascript",
+    nameCertification: "React: Testing and Debugging",
     company: "LinkedIn Learning",
-    href: "https://www.linkedin.com/learning/paths/become-a-react-developer?u=107513458",
-    img:"/BecomeAReactDeveloper.jpg"
+    href: "https://www.linkedin.com/learning/react-testing-and-debugging/testing-and-debugging-your-react-apps?autoAdvance=true&autoSkip=false&autoplay=true&contextUrn=urn%3Ali%3AlearningCollection%3A6820681459993583616&resume=true&u=107513458",
+    img:"/ReactTestingAndDebugging.jpg"
 },]
