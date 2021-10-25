@@ -10,7 +10,7 @@ export const CardComp = ({ title, company, img, link }) => {
 					<Card.Title>{title}</Card.Title>
 					<Card.Text>{company}</Card.Text>
 					<Button variant="primary" href={`${link}`}>
-						Go somewhere
+						Go and Check it out
 					</Button>
 				</Card.Body>
 			</Card>
